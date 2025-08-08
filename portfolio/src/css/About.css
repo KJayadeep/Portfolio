@@ -1,0 +1,28 @@
+
+#About-container{
+    min-height: 770px;
+    background-color: palevioletred;
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About-content{
+    margin: 20px;
+    min-height: 550px;
+    max-width: 550px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+@media (max-width:900px) {
+    #About-container{
+        flex-direction: column;
+    }
+    .About-content{
+        max-width: 100%;
+    }
+}

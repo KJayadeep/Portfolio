@@ -1,0 +1,41 @@
+#Skills-container{
+    padding: 50px;
+    height: 100%;
+    background-color: blueviolet;
+    font-family: Poppins;
+}
+
+#Skills-container .title{
+    font-size: 11vmin;
+    width: 80%;
+    margin: auto;
+}
+
+.skill-card{
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid grey;
+}
+
+.skill-card h1{
+    font-size: 7vmin;
+}
+
+.skill-card img{
+    height: 50px;
+}
+
+@media (max-width:900px) {
+    #Skills-container .title{
+        width: 100%;
+    }
+    .skill-card{
+        height: auto;
+        padding: 20px 0;
+        width: 100%;
+    }
+}
