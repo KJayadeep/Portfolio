@@ -40,7 +40,7 @@ function Nav(){
                 <div className="cont">
                     <ul onClick={handleMenu}>
                         <li>Home</li>
-                        <li><a href="#About-container" >About</a></li>
+                        <li><a href="#About-content" >About</a></li>
                         <li><a href="#Skills-container" >Skills</a></li>
                         <li>Contact</li>
                     </ul>

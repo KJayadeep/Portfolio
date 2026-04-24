@@ -5,7 +5,7 @@ import React from 'react';
 function About(){
 
     return(
-        <div id='About-container'>
+        <div id='about'>
             <ImageSlider/>
             <div className="About-content">
                 <h1>K JAYA DEEP</h1>

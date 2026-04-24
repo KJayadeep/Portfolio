@@ -1,11 +1,12 @@
 
-#About-container{
-    min-height: 770px;
-    background-color: palevioletred;
+#About-container, #about{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
     font-family: Poppins;
     display: flex;
     align-items: center;
     justify-content: center;
+    scroll-margin-top: 100px;
 }
 
 .About-content{

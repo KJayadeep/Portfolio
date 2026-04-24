@@ -19,7 +19,7 @@ function Skills(){
     
 
     return(
-        <div id="Skills-container">
+        <div id="skills">
             <h1 className='title'>Skills</h1>
             {skills.map((skill,index)=>(
                 <div key={index} className='skill-card'>
