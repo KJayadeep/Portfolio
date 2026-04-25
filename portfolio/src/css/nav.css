@@ -125,16 +125,16 @@ nav{
     transition: all 0.3s ease-in-out;
 }
 
-.menu:hover .bar-1{
+.menu.open .bar-1{
     width: 50px;
     transform: rotateZ(45deg);
     position: absolute;
     top: 3;
 }
-.menu:hover .bar-2{
+.menu.open .bar-2{
     width: 0px;
 }
-.menu:hover .bar-3{
+.menu.open .bar-3{
     width: 50px;
     transform: rotateZ(-45deg);
     position: absolute;

@@ -23,7 +23,7 @@ function Nav(){
                 <img src={Jd} alt='JD'/>
             </div>
             
-            <div  onClick={handleMenu} className='menu'>
+            <div onClick={handleMenu} className={`menu ${isOpen ? 'open' : ''}`}>
                 <div className='bar-1'></div>
                 <div className='bar-2'></div>
                 <div className='bar-3'></div>
@@ -31,7 +31,7 @@ function Nav(){
             <div className='side-menu' ref={menuRef}>
                 <div className='logo2'>
                     <img src={Jd} alt='JD'/>
-                    <div  onClick={handleMenu} className='menu'>
+                    <div onClick={handleMenu} className={`menu ${isOpen ? 'open' : ''}`}>
                         <div className='bar-1'></div>
                         <div className='bar-2'></div>
                         <div className='bar-3'></div>
@@ -39,10 +39,10 @@ function Nav(){
                 </div>
                 <div className="cont">
                     <ul onClick={handleMenu}>
-                        <li>Home</li>
-                        <li><a href="#About-content" >About</a></li>
-                        <li><a href="#Skills-container" >Skills</a></li>
-                        <li>Contact</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about" >About</a></li>
+                        <li><a href="#skills" >Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div className='list'>
                         <h2>ADDRESS</h2>
