@@ -6,37 +6,101 @@
     scroll-margin-top: 100px;
 }
 
-#Skills-container .title{
+#skills .title{
     font-size: 11vmin;
     width: 80%;
     margin: auto;
+    text-align: center;
+}
+
+.tabs-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.tab{
+    padding: 12px 30px;
+    font-size: 3vmin;
+    background: transparent;
+    border: 2px solid #e94560;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Poppins;
+}
+
+.tab:hover{
+    background: rgba(233, 69, 96, 0.2);
+}
+
+.tab.active{
+    background: #e94560;
+    color: #fff;
+}
+
+.skills-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .skill-card{
     height: 150px;
     width: 70%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid grey;
+    padding: 0 20px;
+    position: relative;
+    cursor: pointer;
 }
 
-.skill-card h1{
+.skill-card h3{
     font-size: 7vmin;
+    color: #fff;
 }
 
-.skill-card img{
-    height: 50px;
+.skill-logo{
+    height: 60px;
+    position: absolute;
+    left: var(--mouse-x, 50%);
+    top: var(--mouse-y, 50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10;
+    transition: left 0.15s cubic-bezier(0.4, 0, 0.2, 1), top 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 0 0 transparent);
+}
+
+.skill-card:hover .skill-logo{
+    filter: drop-shadow(0 0 12px rgba(233, 69, 96, 0.7));
 }
 
 @media (max-width:900px) {
-    #Skills-container .title{
+    #skills .title{
         width: 100%;
+    }
+    .tabs-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .tab{
+        padding: 10px 20px;
+        font-size: 4vmin;
     }
     .skill-card{
         height: auto;
-        padding: 20px 0;
+        padding: 20px;
         width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .skill-card h3{
+        font-size: 8vmin;
     }
 }
