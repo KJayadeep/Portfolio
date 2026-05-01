@@ -80,6 +80,34 @@ nav{
     margin: 10px 0;
     text-align: left;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cont ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+.cont ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 0.3s ease;
+}
+
+.cont ul li:hover a{
+    color: #00c6ff;
+    transform: translateX(-10px);
+}
+
+.cont ul li:hover a::after{
+    width: 100%;
 }
 
 .cont .list{

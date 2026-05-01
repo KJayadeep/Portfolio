@@ -4,24 +4,18 @@ import React from 'react'
 function Contact(){
     return(
         <div id="contact">
-            <h1 className='title'>Contact</h1>
             <div className="contact-content">
-                <p>Get in touch with me!</p>
-                <div className="contact-info">
-                    <div className="contact-item">
-                        <h3>Email</h3>
-                        <p>your.email@example.com</p>
-                    </div>
-                    <div className="contact-item">
-                        <h3>Phone</h3>
-                        <p>+91 1234567890</p>
-                    </div>
-                    <div className="contact-item">
-                        <h3>Location</h3>
-                        <p>Your City, Country</p>
-                    </div>
+                <h3>Jaya Deep Kundrapu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate. Voluptas, voluptate.</p>
+                <div className="social-links">
+                    <a href="#" className="social-link">GitHub</a>
+                    <a href="#" className="social-link">LinkedIn</a>
+                    <a href="#" className="social-link">Gmail</a>
                 </div>
             </div>
+            <footer className="footer">
+                <p>&copy; 2026 Jaya Deep Kundrapu. All rights reserved.</p>
+            </footer>
         </div>
     );
 }

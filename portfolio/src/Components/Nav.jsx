@@ -48,7 +48,8 @@ function Nav(){
             const loader = new GLTFLoader();
             loader.load('/src/assets/jd3.0 copy.glb', (gltf) => {
                 const model = gltf.scene;
-                model.scale.set(0.5, 0.5, 0.5);
+                model.scale.set(1, 1, 1);
+                model.rotation.y = Math.PI;
                 scene.add(model);
 
                 // Track mouse movement for hover effect
@@ -57,12 +58,12 @@ function Nav(){
                     const mouseX = ((e.clientX - rect.left) / rect.width) * 2 - 1;
                     const mouseY = -((e.clientY - rect.top) / rect.height) * 2 + 1;
 
-                    model.rotation.y = mouseX * 0.5;
+                    model.rotation.y = Math.PI + mouseX * 0.5;
                     model.rotation.x = -mouseY * 0.5;
                 });
 
                 container.addEventListener('mouseleave', () => {
-                    model.rotation.y = 0;
+                    model.rotation.y = Math.PI;
                     model.rotation.x = 0;
                 });
             });
